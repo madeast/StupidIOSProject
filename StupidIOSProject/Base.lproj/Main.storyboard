@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StupidIOSProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Me" id="BYZ-38-t0r" customClass="MeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,40 +18,113 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6N-GU-SoT">
-                                <rect key="frame" x="277" y="352" width="46" height="30"/>
+                                <rect key="frame" x="277" y="181" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="blueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O50-dX-uCP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVi-Sn-FCD">
-                                <rect key="frame" x="277" y="243" width="46" height="30"/>
+                                <rect key="frame" x="277" y="132" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="greenColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNm-Nv-fFD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-Ae-nAW">
-                                <rect key="frame" x="277" y="106" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5O-LR-UHR"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMm-gJ-JOB">
-                                <rect key="frame" x="277" y="496" width="46" height="30"/>
+                                <rect key="frame" x="277" y="231" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BHm-Oj-6DC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7D-Ae-nAW">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5O-LR-UHR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B06-uA-hDs">
+                                <rect key="frame" x="277" y="500" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Transition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f05-nN-8Fc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Eyv-z7-1P6" kind="presentation" identifier="Segway" id="y79-z9-PuK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="429"/>
+            <point key="canvasLocation" x="-300" y="-289"/>
+        </scene>
+        <!--SecondView Controller-->
+        <scene sceneID="fOq-zn-87N">
+            <objects>
+                <viewController title="Favorites" id="Eyv-z7-1P6" userLabel="SecondView Controller" customClass="FavoriteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fkC-9k-FgE"/>
+                        <viewControllerLayoutGuide type="bottom" id="vyn-j8-Eib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Njy-eH-Ra6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Hcc-Cl-PAg" kind="presentation" id="Mz4-ER-PgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duP-dS-YKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="-721"/>
+        </scene>
+        <!--Family-->
+        <scene sceneID="M1y-S8-lhC">
+            <objects>
+                <viewController title="Family" id="0DW-KC-HkB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1Y-d8-CwN"/>
+                        <viewControllerLayoutGuide type="bottom" id="UnZ-63-cTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2EU-Aa-pCW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMe" id="GKl-O2-r2k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWU-yL-fDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="1325"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="NbG-oQ-EZo">
+            <objects>
+                <viewController title="Hobbies" id="Hcc-Cl-PAg" customClass="HobbiesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MhT-Kq-wQd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fmh-E0-ovo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nvQ-ec-oEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="0DW-KC-HkB" kind="presentation" identifier="toFamily" id="CMa-Vy-2Qs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZO-62-O6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1297"/>
         </scene>
     </scenes>
 </document>
